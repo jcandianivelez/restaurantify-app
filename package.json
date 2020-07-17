@@ -1,0 +1,57 @@
+{
+  "name": "restaurantify",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "rm -rf ./node_modules/.cache/babel-loader && react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "postinstall": "node_modules/.bin/rn-nodeify --install crypto,fs,https --hack"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.0.1",
+    "@apollo/react-hoc": "^3.1.5",
+    "@bam.tech/react-native-graphql-transformer": "^0.1.5",
+    "apollo-client": "^2.6.10",
+    "babel-plugin-import-graphql": "^2.7.0",
+    "babel-plugin-macros": "^2.8.0",
+    "fs": "0.0.1-security",
+    "graphql": "^15.3.0",
+    "https-browserify": "0.0.1",
+    "path": "^0.12.7",
+    "react": "16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "0.63.1",
+    "react-native-crypto": "^2.2.0",
+    "react-native-elements": "^2.0.4",
+    "react-native-level-fs": "^3.0.1",
+    "react-native-randombytes": "^3.5.3",
+    "react-native-vector-icons": "^7.0.0",
+    "rn-nodeify": "^10.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "https": "https-browserify",
+    "fs": "react-native-level-fs"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "https": "https-browserify",
+    "fs": "react-native-level-fs"
+  }
+}
